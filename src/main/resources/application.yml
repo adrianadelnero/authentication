@@ -1,0 +1,14 @@
+api:
+ admin:
+   password: ${ADMIN_PASSWORD:secret}
+spring:
+  oauth2:
+    resource:
+      id: bcrypt
+  datasource:
+    url: jdbc:h2:mem:projeto
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+server.port: 5000
